@@ -10,5 +10,7 @@ In lesson 1, we've talked about storing user's data into mongoDB with plain stri
 Lesson 2, This lesson also teaches how to encrypt and decrypt passwords using mongoose-encryption. This way, user's information and password will be stored securely in our database.
 Bus this is also unsafe because if the code is published onto Github or anywhere that people can access the code publicly. Anyone would be able to decrypt user's datas using mongoose-encryption.
 
-<!-- Lesson 3 -->
-Lesson 3, This lesson uses environment variables (dotenv). Use require("dotenv").config(); It's also important to put this code on the first line.
+
+To make our data more secure, we use environment variables (dotenv npm). Use require("dotenv").config(); It's also important to put this code on the first line.
+By using this, it will be save for us to push our code without any confidential data onto GitHub repo.
+BUT, make sure to include .env in .gitignore file as well.

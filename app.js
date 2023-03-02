@@ -4,23 +4,22 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const encrypt = require("mongoose-encryption");
 
-
-
 const app = express();
+
+const dbHost = process.env.DB_HOST;
+const secret = process.env.SECRET;
 
 app.set("view engine", "ejs");
 app.use(express.static("public"), bodyParser.urlencoded({extended: true}));
 
-mongoose.connect("mongodb://localhost:27017/userDB");
+mongoose.connect(dbHost);
 
 const userSchema = new mongoose.Schema({
     email: String,
     password: String
 });
 
-console.log(process.env.API)
-
-userSchema.plugin(encrypt, {secret: process.env.SECRET, encryptedFields: ['password']});
+userSchema.plugin(encrypt, {secret: secret, encryptedFields: ['password']});
 
 const User = new mongoose.model("User", userSchema);
 
@@ -38,7 +37,7 @@ app.route("/login")
         const username = req.body.username
         const password = req.body.password
 
-        User.findOne({email: username}).then(function(foundUser){
+        User.findOne({email: username}).then((foundUser) => {
                 if (foundUser) {
                     if (foundUser.password === password) {
                         res.render("secrets")
