@@ -11,3 +11,4 @@ Lesson 2, This lesson also teaches how to encrypt and decrypt passwords using mo
 Bus this is also unsafe because if the code is published onto Github or anywhere that people can access the code publicly. Anyone would be able to decrypt user's datas using mongoose-encryption.
 
 <!-- Lesson 3 -->
+Lesson 3, This lesson uses environment variables (dotenv). Use require("dotenv").config(); It's also important to put this code on the first line.
