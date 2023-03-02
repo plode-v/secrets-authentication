@@ -7,7 +7,7 @@ In lesson 1, we've talked about storing user's data into mongoDB with plain stri
 
 
 <!-- Lesson 2 -->
-This lesson also teaches how to encrypt and decrypt passwords using mongoose-encryption. This way, user's information and password will be stored securely in our database.
+Lesson 2, This lesson also teaches how to encrypt and decrypt passwords using mongoose-encryption. This way, user's information and password will be stored securely in our database.
 Bus this is also unsafe because if the code is published onto Github or anywhere that people can access the code publicly. Anyone would be able to decrypt user's datas using mongoose-encryption.
 
 <!-- Lesson 3 -->
