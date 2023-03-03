@@ -15,3 +15,7 @@ To make our data more secure, we use environment variables (dotenv npm). Use req
 To access the variables from .env, type process.env.NAME;
 By using this, it will be save for us to push our code without any confidential data onto GitHub repo.
 BUT, make sure to include .env in .gitignore file as well.
+
+<!-- Lesson 3 -->
+Lesson 3, This lesson we talk about Hashing passwords. Use Hash function that turn passwords into a hash.
+Install md-5 npm. Use md5(req.body.password)
