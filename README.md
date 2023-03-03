@@ -19,3 +19,7 @@ BUT, make sure to include .env in .gitignore file as well.
 <!-- Lesson 3 -->
 Lesson 3, This lesson we talk about Hashing passwords. Use Hash function that turn passwords into a hash.
 Install md-5 npm. Use md5(req.body.password)
+
+<!-- Lesson 4 -->
+Lesson 4, we talk about salting. To prevent for any cracking in hash passwords from short or insecured passwords. Salting make hash more complex by adding more random numbers/characters in front or after the hash passwords.
+Also use bcrypt and more salting rounds.
