@@ -12,5 +12,6 @@ Bus this is also unsafe because if the code is published onto Github or anywhere
 
 
 To make our data more secure, we use environment variables (dotenv npm). Use require("dotenv").config(); It's also important to put this code on the first line.
+To access the variables from .env, type process.env.NAME;
 By using this, it will be save for us to push our code without any confidential data onto GitHub repo.
 BUT, make sure to include .env in .gitignore file as well.
